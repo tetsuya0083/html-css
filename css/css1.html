@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <!-- 외부 스타일 시트 -->
+  <link rel="stylesheet" href="mystyle1.css">
+
+  <!-- 내부 스타일 시트 -->
+  <!--tag selector -->
+  <style>
+    p {
+      color: blue;
+    }
+  </style>
+
+
+  <!-- class selector -->
+  <style>
+    .ClsHighlight {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+
+
+  <!-- ID selector -->
+  <style>
+    #colorGreen {
+      color: purple;
+    }
+  </style>
+
+
+  <style>
+    h1 {
+      color: green;
+    }
+    <!-- attribute selector -->
+    a[href]{
+      color: red;
+    }
+
+    a[target="_blank"]{
+      color: blue;
+    }
+
+    <!-- 하위 선택자 -->
+    div p {
+      color: deepskyblue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p style="color:pink;">CSS 문법 테스트</p> <br>
+
+  <p> BLUE 태그 선택자 테스트 </p> <br> <!--tag selector-->
+
+  <h1> h1 GREEN 내부 스타일 시트 </h1> <br>
+  <h2> h2 RED 외부 스타일 시트</h2> <br>
+
+  <!-- 인라인 스타일 시트 -->
+  <h1 style="font-size: 23Px; color: red"> h1 RED 인라인 스타일 시트 </h1> <br>
+
+  <!-- id selector -->
+  <h1 id="colorGreen"> PURPLE 아이디 선택자</h1>
+
+  <!-- class selector  -->
+  <p class="ClsHighlight">이 텍스트는 빨간색 굵은 글씨로 표시됩니다.</p>
+  <p class="ClsHighlight">이 텍스트도요</p>
+  <p>이건 아니에요</p>
+
+  <!-- attribute selector -->
+  <a href="#">이 텍스트는 빨간색</a> <br>
+  <a href="#" target="_blank">이 텍스트는 파란색</a>  <br>
+
+  <!-- 자식 선택자 child selector
+  <div class="test">
+    <p>이 문장은 mediumaquamarine색입니다.</p>
+    <div>
+      <p>이 문장은 blue 색상입니다.</p>
+    </div>
+  </div>
+  -->
+
+  <!-- 하위 선택자 -->
+  <div>
+    <p>1</p>
+    <ul>
+      <li>
+        <p>2</p>
+      </li>
+      <li>
+        <p>3</p>
+      </li>
+    </ul>
+  </div>
+  <p>4</p>
+
+
+
+
+</body>
+</html>

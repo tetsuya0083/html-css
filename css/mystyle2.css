@@ -1,0 +1,25 @@
+/*구조적 가상 클래스 선택자*/
+/*:first-child와 :last-child*/
+p:first-child {
+  color: red;
+}
+
+p:last-child {
+  color: red;
+}
+
+/*선택자 조합*/
+/*1. 클래스와 아이디*/
+div.testclass {}  /* class 속성값이 test인 div 태그 */
+section#title {}  /* id 속성값이 title인 section 태그 */
+#title.test {}  /* id 속성값이 title이고, class 속성값이 test인 요소 */
+
+/*2. 가상 클래스와 하위 선택자, 자식 선택자 조합*/
+div:hover button {}  /* div 태그에 마우스를 올렸을 때, 해당 div 태그 하위에 있는 button 태그 선택 */
+div:hover > button {}  /* div 태그에 마우스를 올렸을 때, 해당 div 태그의 자식인 button 태그 선택 */
+
+h6 {
+  color: aqua;
+  background: black;
+}
+

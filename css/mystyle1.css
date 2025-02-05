@@ -1,0 +1,84 @@
+h2 {
+  color: red;
+}
+
+/*자식 선택자
+.test > p {
+  color: mediumaquamarine;
+}
+*/
+
+/*하위 선택자*/
+div p {
+   color: mediumaquamarine;
+}
+
+/*
+인접 형제 선택자 (+) & 일반 형제 선택자 (~)
+h1 + h2 {
+   color: rosybrown;
+}
+h1 ~ h2 {
+  color: blue;
+}
+*/
+
+/*가상 요소 선택자*/
+/*p::before {*/
+/*  content: "주의!";*/
+/*  color: violet;*/
+/*}*/
+
+/*링크 가상 클래스 선택자***************************************************/
+a:link { /* 방문한 적이 없는 링크 */
+  color: orange;
+}
+
+a:visited { /* 한 번이라도 방문한 적이 있는 링크 */
+  color: green;
+}
+/***********************************************************************/
+/*동적 가상 클래스 선택자***************************************************/
+/* 마우스를 올리면 초록색으로 변경 */
+/*button:hover {*/
+/*  background-color: green;*/
+/*}*/
+/* 버튼을 누르면 빨간색으로 변경 */
+/*button:active {*/
+/*  background-color: red;*/
+/*}*/
+/***********************************************************************/
+
+
+/*입력 요소 가상 클래스 선택자***********************************************/
+/* 텍스트 입력 필드에 포커스가 맞춰지면 테두리가 red로 바뀌고 배경색이 #8782BA으로 변경 */
+input:focus {
+  border: 7px solid red;
+  background-color: #8782BA;
+}
+
+/* 체크박스에 체크하면 해당 체크박스와 연결된 라벨의 글자 색상이 녹색으로 바뀜 */
+input[type="checkbox"]:checked + label {
+  border: 7px solid red;
+  color: green;
+}
+
+/* 버튼이 비활성화되어 있을 때 배경색이 회색으로 변함 */
+button:disabled {
+  background-color: #ccc;
+}
+
+/* 버튼이 활성화되어 있을 때 배경색이 녹색으로 글자 색상은 흰색으로 변경 */
+button:enabled {
+  background-color: #4caf50;
+  color: white;
+}
+/***********************************************************************/
+
+h5 {
+  color: aquamarine;
+  background: crimson;
+}
+
+
+

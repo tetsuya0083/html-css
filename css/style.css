@@ -24,6 +24,8 @@ html {
  * Customize the background color to match your design.
  */
 
+
+/* 가상 요소 선택자 ::으로 사용함.*/
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -232,6 +234,7 @@ textarea {
     page-break-inside: avoid;
   }
 
+  /* 그룹 선택자 ,(쉼표)로 구분함. */
   p,
   h2,
   h3 {
@@ -244,4 +247,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
