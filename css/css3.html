@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <link rel="stylesheet" href="mystyle2.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <style>
+    div {
+      color: red;
+    }
+   </style>
+
+  <style>
+    .parent_inherit {
+      color: blue;
+    }
+    .children_inherit {
+      color: inherit;
+      font-size: large;
+      font-weight: bold;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div>
+    <p>inherit</p>
+  </div>
+  <p>inherit</p>
+
+  <div class="parent_inherit">
+    <p class="children_inherit">이 문장은 부모의 색상을 상속받아 파란색(blue)으로 표시되고,
+      children_inherit의 font-size와 font-weight를 가짐.</p>
+  </div>
+
+  <p class="parent_em">parent em 확인합니다.</p>
+  <p class="child_em">
+    child_em 확인합니다.<br>
+    <span class="child_em-to-child">child_em-to-child em 확인합니다.</span>
+  </p>
+
+  <p class="parent_rem">parent rem 확인합니다.</p>
+  <p class="child_rem">child rem 확인합니다.</p>
+
+  <p class="parent_vw">parent vw 확인합니다.</p>
+  <p class="child_vw">child vw 확인합니다.</p>
+
+  <p class="parent_vh">parent vh 확인합니다.</p>
+  <p class="child_vh">child vh 확인합니다.</p>
+
+
+  <!--텍스트 속성-->
+  <p id="letter1">hello! CSS!</p>
+  <p id="letter2">hello! CSS!</p>
+
+  <p class="italic">Hello! CSS! (italic)</p>
+  <p class="oblique">Hello! CSS! (oblique)</p>
+
+  <p style="text-align: justify; text-decoration: none; letter-spacing: 10px; line-height: 2;">2 Lorem ipsum dolor sit amet consectetur adipiscing elit. Autem, error! Id dolore officiis commodi est ad enim earum magnam possimus assumenda velit qui dignissimos eos nihil mollitia distinctio.</p>
+  <p style="text-align: justify; text-decoration: none; letter-spacing: 10px; line-height: 50%;">50% Lorem ipsum dolor sit amet consectetur adipiscing elit. Autem, error! Id dolore officiis commodi est ad enim earum magnam possimus assumenda velit qui dignissimos eos nihil mollitia distinctio.</p>
+  <p style="text-align: justify; text-decoration: none; letter-spacing: 10px; line-height: 100%;">100% Lorem ipsum dolor sit amet consectetur adipiscing elit. Autem, error! Id dolore officiis commodi est ad enim earum magnam possimus assumenda velit qui dignissimos eos nihil mollitia distinctio.</p>
+  <p style="text-align: justify; text-decoration: none; letter-spacing: 10px; line-height: 210%;">200% Lorem ipsum dolor sit amet consectetur adipiscing elit. Autem, error! Id dolore officiis commodi est ad enim earum magnam possimus assumenda velit qui dignissimos eos nihil mollitia distinctio.</p>
+  <p style="text-align: justify; text-decoration: none; letter-spacing: 10px; line-height: 100px;">30px Lorem ipsum dolor sit amet consectetur adipiscing elit. Autem, error! Id dolore officiis commodi est ad enim earum magnam possimus assumenda velit qui dignissimos eos nihil mollitia distinctio.</p>
+  <p style="text-align: center; text-decoration: underline">Lorem ipsum dolor sit amet consectetur adipiscing elit. Autem, error! Id dolore officiis commodi est ad enim earum magnam possimus assumenda velit qui dignissimos eos nihil mollitia distinctio.</p>
+  <p style="text-align: end; text-decoration: overline">Lorem ipsum dolor sit amet consectetur adipiscing elit. Autem, error! Id dolore officiis commodi est ad enim earum magnam possimus assumenda velit qui dignissimos eos nihil mollitia distinctio.</p>
+  <p style="text-align: left; text-decoration: line-through">Lorem ipsum dolor sit amet consectetur adipiscing elit. Autem, error! Id dolore officiis commodi est ad enim earum magnam possimus assumenda velit qui dignissimos eos nihil mollitia distinctio.</p>
+  <p style="text-align: right">Lorem ipsum dolor sit amet consectetur adipiscing elit. Autem, error! Id dolore officiis commodi est ad enim earum magnam possimus assumenda velit qui dignissimos eos nihil mollitia distinctio.</p>
+
+</body>
+</html>

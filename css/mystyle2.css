@@ -1,12 +1,12 @@
 /*구조적 가상 클래스 선택자*/
 /*:first-child와 :last-child*/
-p:first-child {
-  color: red;
-}
+/*p:first-child {*/
+/*  color: red;*/
+/*}*/
 
-p:last-child {
-  color: red;
-}
+/*p:last-child {*/
+/*  color: red;*/
+/*}*/
 
 /*선택자 조합*/
 /*1. 클래스와 아이디*/
@@ -23,3 +23,58 @@ h6 {
   background: black;
 }
 
+.parent_em {
+  font-size: 16px;
+}
+
+.child_em {
+  font-size: 2em; /* 16px(부모 font-size 크기) * 2em = 32px */
+}
+
+.child_em-to-child {
+  font-size: 2em; /* 32px(부모 font-size 크기) * 2em = 64px */
+}
+
+html {
+  font-size: 16px;
+}
+
+.parent_rem {
+  font-size: 1rem; /* 16px * 1rem = 16px */
+}
+
+.child_rem {
+  font-size: 2rem; /* 16px * 2rem = 32px */
+}
+
+.parent_vw {
+  font-size: 1vw; /* 900px * 1/100 = 9px */
+}
+
+.child_vw {
+  font-size: 2vw; /* 900px * 2/100 = 18px */
+}
+
+.parent_vh {
+  font-size: 1vh; /* 400px * 1/100 = 4px */
+}
+
+.child_vh {
+  font-size: 2vh; /* 400px * 2/100 = 8px */
+}
+
+#letter1 {
+  font-family: Symbol;
+}
+
+#letter2 {
+  font-family: "Work Sans", serif;
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+.oblique {
+  font-style: oblique;
+}
