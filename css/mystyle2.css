@@ -78,3 +78,60 @@ html {
 .oblique {
   font-style: oblique;
 }
+
+#margin1{
+  margin: 20px;
+
+}
+
+#margin2{
+  margin: 40px;
+
+}
+
+
+/*body{*/
+/*  text-align: right;*/
+/*}*/
+.box{
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+.red_box{
+  background-color: red;
+}
+.green_box{
+  background-color: green;
+}
+.blue_box{
+  background-color: blue;
+}
+
+div {
+  width: 800px;
+  height: 600px;
+  background-color: red;
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20240926_0/upload_1727340486286Jh4lB.png');
+  background-size: 80px 60px;
+  background-position: 0% 100%;
+
+  border: 1px solid black;
+  /*background-repeat: no-repeat;*/
+}
+
+body {
+  height: 100vh;
+  overflow: scroll;
+}
+
+.parent_BGA {
+  border: 1px solid black;
+  overflow: scroll;
+}
+
+.children_BGA {
+  height: 200px;
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20240926_0/upload_1727340486286Jh4lB.png');
+  background-attachment: fixed; /* local, scroll */
+}

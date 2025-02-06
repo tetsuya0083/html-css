@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <style>
+
+    body {
+      height: 3000px; /* 스크롤 할 수 있게 높이 지정 */
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+
+    .red-box {
+      background-color: red;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      z-index: 1;
+    }
+
+    .green-box {
+      background-color: green;
+      /*position: relative; !*상대적 이동*!*/
+      /*left: 100px;*/
+
+      position: absolute;; /*요소(또는 body 요소)를 기준으로 절대적인 위치에 배치*/
+      left: 0px;
+      top: 0px;
+      z-index: 2;
+
+      /*position: fixed; !* 브라우저 창에 고정. 스크롤해도 위치가 변하지 않음. *!*/
+      /*left: 120px;*/
+      /*top: 120px;*/
+
+    }
+
+    .blue-box {
+      background-color: blue;
+      position: absolute;
+      left: 50px;
+      top: 50px;
+      z-index: 3;
+    }
+
+    img {
+      float: left;
+      margin-right: 1rem;
+    }
+
+    div {
+      color: white;
+    }
+    .red_box_float {
+      background-color: red;
+      float: left; /*float 속성을 사용하면 인라인 요소처럼 한 줄에 나란히 배치할 수 있음.*/
+    }
+    .blue_box_float {
+      background-color: blue;
+    }
+
+    .container {
+      width: 400px;
+      padding: 1rem;
+      margin: 0 auto;
+      border: 1px solid black;
+      background-color: #ccc;
+    }
+
+    .box_float_error {
+      width: 100px;
+      height: 100px;
+      float: left; /* float 속성 추가 */
+    }
+
+    .red_box_error {
+      background-color: red;
+    }
+
+    .blue_box_error {
+      background-color: blue;
+    }
+
+    .box_float_error_fixed {
+      width: 100px;
+      height: 100px;
+    }
+
+    .red_box_error_fixed {
+      background-color: red;
+      float: left;
+    }
+
+    .green_box_error_fixed {
+      background-color: green;
+      float: left;
+    }
+
+    .blue_box_error_fixed {
+      background-color: blue;
+      clear: left; /*float으로 발생한 layout 문제를 수정*/`
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="box red-box"></div>
+  <div class="box green-box"></div>
+  <div class="box blue-box"></div>
+
+  <img src="https://s.pstatic.net/static/www/mobile/edit/20240926_0/upload_1727340486286Jh4lB.png">
+  <p>안녕하십니까 여러분 만나서 반갑습니다.
+    텍스트가 이미지를 감싸야하니까 조금 길게 써보겠습니다.
+    안녕하십니까 여러분 만나서 반갑습니다.
+    텍스트가 이미지를 감싸야하니까 조금 길게 써보겠습니다.
+    안녕하십니까 여러분 만나서 반갑습니다.
+    텍스트가 이미지를 감싸야하니까 조금 길게 써보겠습니다.
+    안녕하십니까 여러분 만나서 반갑습니다.
+    텍스트가 이미지를 감싸야하니까 조금 길게 써보겠습니다.
+    안녕하십니까 여러분 만나서 반갑습니다.
+    텍스트가 이미지를 감싸야하니까 조금 길게 써보겠습니다.
+  </p>
+
+  <div class="red_box_float">red-box</div>
+  <div class="blue_box_float">blue-box</div>
+
+<!--  float layout error-->
+<!--  <div class="container">-->
+<!--    <div class="box_float_error red_box_error"></div>-->
+<!--    <div class="box_float_error blue_box_error"></div>-->
+<!--  </div>-->
+
+<!--&lt;!&ndash;float layout fixed&ndash;&gt;-->
+  <div class="container">
+    <div class="box_float_error_fixed red_box_error_fixed"></div>
+    <div class="box_float_error_fixed green_box_error_fixed"></div>
+    <div class="box_float_error_fixed blue_box_error_fixed"></div>
+  </div>
+
+
+
+
+
+
+
+</body>
+</html>
